@@ -3,10 +3,10 @@
         <h1 class="primary-on-text" v-html="title"/>
         <div ref="text_root" v-html="textContent" />
         <div ref="raw_root" v-html="svgContent" />
-        
+
         <!-- DONE -->
         <CompletionButton :completed="completed" v-on:complete="onCompletionHandler" />
-        
+
         <div class="footer" />
     </div>
 </template>
@@ -22,7 +22,7 @@
   .footer{
     height: 80px;
   }
-  
+
   .col /deep/ ._definition{
     color: var(--lesson-color);
     cursor:pointer;
@@ -53,10 +53,10 @@ export default class LessonInfographic extends Vue {
   textContent = "";
   hasTextContent = false;
 
-  interactives = new Map(); 
+  interactives = new Map();
 
   definitions: any[] = [];
-  
+
   beforeMount(){
     const lesson = $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
     console.log("lesson", lesson);
@@ -67,8 +67,10 @@ export default class LessonInfographic extends Vue {
   }
 
   mounted(){
-    this.setup();
-    this.setupDefinitions();
+    setTimeout(_=>{
+        this.setup();
+        this.setupDefinitions();
+        },100)
   }
 
   beforeDestroy(){
@@ -77,9 +79,9 @@ export default class LessonInfographic extends Vue {
   }
 
   get module() {
-    return $module.getModuleWithId(this.moduleId);    
+    return $module.getModuleWithId(this.moduleId);
   }
-  
+
   get lesson(){
     return $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
   }
@@ -87,7 +89,7 @@ export default class LessonInfographic extends Vue {
   get title(){
     return this.lesson.title;
   }
-  
+
   get completed(){
     return this.state == "done";
   }
@@ -96,7 +98,7 @@ export default class LessonInfographic extends Vue {
     const metric = $metric.progressionState[this.lesson.id] || {};
     return metric.state || '';
   }
-  
+
   get cssVars(){
       return {
         '--lesson-color': $config.store.config.themes[this.module.theme].primary,
@@ -131,23 +133,23 @@ export default class LessonInfographic extends Vue {
     // console.log(e.target);
     const id = this.findNodeWithId(e.target);
     console.log("id", id);
-    this.hideAllOverlays(); 
+    this.hideAllOverlays();
     this.enableTransitions();
     this.interactives.get(id).overlay.classList.add('infographic-overlay-visible');
     e.stopPropagation();
   }
 
   overlayClickHandler(e){
-    this.hideAllOverlays(); 
+    this.hideAllOverlays();
   }
-  
+
   definitionClickHandler(e: any){
     const definitionId = e.target.dataset.definitionId;
     // const height = getOffset(e.target).top;
     const definition = this.definitions.find(def => def.id === definitionId).definition;
     this.$emit('popupRequest', { definition });
   }
-  
+
   setupDefinitions(){
       const textRoot = this.$refs['text_root'] as HTMLElement;
       if(!textRoot) return;
@@ -166,7 +168,7 @@ export default class LessonInfographic extends Vue {
         const button = buttons[i];
         const id = button.id;
         const index = id.substring(id.length - 2);
-        
+
         const overlay:HTMLElement = overlays.find(overlay =>  overlay.id.endsWith(index)) as HTMLElement;
 
         if(overlay){
@@ -188,7 +190,7 @@ export default class LessonInfographic extends Vue {
       value.overlay.removeEventListener('click', this.overlayClickHandler);
     }
   }
-  
+
   cleanupDefinitions(){
       const rawRoot = this.$refs['raw_root'] as HTMLElement;
       const definitionElements = rawRoot.querySelectorAll('._definition');
