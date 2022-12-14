@@ -1,17 +1,17 @@
 <template>
-  <div id="app">  
+  <div id="app">
     <!-- IOS INSTALL -->
     <div class="overlay-pane" :class="{'overlay-open':displayIosInstall}">
       <div class="install-ios">
         <div class="surface">
           <div class="cancel material-icons" @click="onClose">close</div>
           <div class="label">
-            Installez MILID dans votre appareil.<br/> 
+            Installez MILID dans votre appareil.<br/>
             Appuyez sur l'icône de Partage, puis sélectionnez<br/>
             <b>Ajouter à l'écran d'accueil.</b>
           </div>
           <div class="bottom material-icons" >arrow_downward</div>
-        </div>          
+        </div>
       </div>
     </div>
     <!-- SAFARI INSTALL -->
@@ -20,10 +20,10 @@
         <div class="surface">
           <div class="cancel material-icons" @click="onClose">close</div>
           <div class="label">
-            Pour ajouter MILID dans votre appareil.<br/> 
+            Pour ajouter MILID dans votre appareil.<br/>
             Il faut utiliser le navigateur <b>Safari</b><br/>
           </div>
-        </div>          
+        </div>
       </div>
     </div>
 
@@ -32,7 +32,7 @@
     <div class="overlay-pane" :class="{'overlay-open':updateExists}">
       <div class="install-ios">
         <div class="surface">
-          
+
           <div class="label">
             <span v-html="i18n('app_pwa_update')" />
             <span class="update material-icons" @click="onRefreshApp">update</span>
@@ -47,12 +47,12 @@
 
 <style lang="scss">
 
-// 
+//
 // global style
 @import "./app.scss";
 
 #app {
-  font-family: inter, Sans-Serif;
+  font-family: "space grotesk", Sans-Serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -68,7 +68,7 @@ import { $config } from './services';
 
 @Component
 export default class App extends Vue {
-  displayUseSafari = false;  
+  displayUseSafari = false;
   displayIosInstall = false;
   registration: any = {};
   updateExists = false;
@@ -84,12 +84,12 @@ export default class App extends Vue {
     window.addEventListener('installprompt', () => {
       console.log('iOS browser prompt');
       if(!$config.isSafari()) {
-        this.displayUseSafari =  true;  
+        this.displayUseSafari =  true;
         return;
       }
       this.displayIosInstall =  true;
       setTimeout(()=>{
-        this.displayUseSafari =  false;  
+        this.displayUseSafari =  false;
         this.displayIosInstall =  false;
       },10000);
     });
@@ -98,7 +98,7 @@ export default class App extends Vue {
     // update app
     window.addEventListener('swUpdated', this.onUpdateAvailable, { once: true })
 
-  }  
+  }
 
   onUpdateAvailable(event){
       this.registration = event.detail
@@ -119,9 +119,6 @@ export default class App extends Vue {
     //
     //refresh content from registerServiceWorker.ts
     //setTimeout(()=> window.location.reload(true),3000);
-  }  
+  }
 }
 </script>
-
-
-
