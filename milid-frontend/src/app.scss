@@ -148,15 +148,13 @@ strong{
     font-weight: 500;
     letter-spacing: -0.01em;
     line-height: 16px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 6px;
     text-transform: uppercase;
     font-weight: 900;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
+    height: 100%;
     &.tight {
       margin: 0;
     }
@@ -174,14 +172,18 @@ strong{
       height: 25px;
       margin: auto;
     }
+    svg{
+        margin-top: 7px;
+    }
   }
 
   .toolbar-row {
     width: 100%;
     min-height: 38px;
+    height: 100%;
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
   }
 
   button{
@@ -193,22 +195,10 @@ strong{
     svg{
       width: 34px;
     }
-
-    &.end{
-      margin-right: 10px;
-      margin-top: 15px;
-    }
-    &.start{
-      margin-left: 10px;
-      margin-top: 15px;
-    }
   }
 
 }
 
-.toolbar-row + .toolbar-row {
-  margin-top: -12px;
-}
 
 
 button.done {
