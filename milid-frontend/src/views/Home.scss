@@ -1,14 +1,29 @@
+/* * * * space grotesk * * * * */
+
+@font-face {
+  font-family: "space grotesk";
+  src: url("/fonts/space_grotesk/SpaceGrotesk-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "space grotesk";
+  src: url("/fonts/space_grotesk/SpaceGrotesk-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
   .home{
     padding-top: 80px;
     .toolbar{
       transform: translateY(0);
-      transition: all 200ms;      
+      transition: all 200ms;
       top:-70px;
       background-color: var(--md-theme-default-primary);
       height: 69px;
       -box-shadow: 0 2px 3px -1px rgba(0,0,0,.1);
       &.exited {
-        transform: translateY(69px);            
+        transform: translateY(69px);
       }
 
       .toolbar-title{
@@ -36,7 +51,7 @@
     margin-top: 10px;
     svg {
       width: 30%;
-      color: var(--theme-1-primary);            
+      color: var(--theme-1-primary);
     }
     h2{
       text-transform: uppercase;
@@ -45,9 +60,9 @@
 
 
 
-  .module {    
+  .module {
     margin-bottom: 100px;
-    margin-top: 50px;  
+    margin-top: 50px;
     text-align: left;
     padding-top: 30px;
     position: relative;
@@ -61,11 +76,11 @@
       overflow: visible;
       left: 0;
       top: -20px;
-      z-index: -1;      
+      z-index: -1;
       @media (min-width:426px) {
         top:-50px;
       }
-  
+
     }
     .bottom-wave {
       top: inherit;
@@ -75,18 +90,18 @@
     >.title {
       color: #111;
       text-transform: uppercase;
-      padding-left: 10px;      
+      padding-left: 10px;
       font-weight: 700;
       line-height: 13px;
-      font-size: 14px;      
+      font-size: 14px;
       margin-top: 5px;
     }
     >.subtitle{
       color: #111;
-      padding-left: 10px;      
+      padding-left: 10px;
       font-weight: 200;
       font-size: 11px;
-      margin-top: 5px;      
+      margin-top: 5px;
     }
 
     .lesson {
@@ -98,19 +113,19 @@
       &.done {
         opacity: .3;
       }
-      
+
       .type {
         opacity: .99;
         width: 28px;
         margin: 5px;
         margin-right: 5px;
-        margin-left: auto;        
+        margin-left: auto;
       }
       .title{
         line-height: 14px;
         font-size: 13px;
         font-weight: 400;
-        padding: 2px 10px;        
+        padding: 2px 10px;
         padding-bottom: 20px;
       }
       .cover{
@@ -133,15 +148,15 @@
       display: inline-block;
       width: 100%;
       text-align: center;
-      font-family: inter, sans-serif;
+      font-family: "space grotesk", sans-serif;
       font-weight: 900;
-    } 
-  }  
+    }
+  }
 
-  @for $i from 1 through 36 { 
+  @for $i from 1 through 36 {
     div.-lesson:nth-child(#{$i}) {
       $h: (random(400) + 100) + px;
       height: $h;
       line-height: $h;
     }
-  }  
+  }
