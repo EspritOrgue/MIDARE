@@ -3,18 +3,18 @@ const github = process.env.NODE_ENV === "github";
 //
 // pwa config
 // https://cli.vuejs.org/core-plugins/pwa.html#configuration
-module.exports = {  
+module.exports = {
   publicPath : github? '/MILID': (prod? '/':'/'),
   devServer: {
     proxy: {
       '^/api': {
         target: 'http://localhost:4000',
-        changeOrigin: true, // so CORS doesn't bite us. 
+        changeOrigin: true, // so CORS doesn't bite us.
       }
     }
   },
   pwa:{
-    name:"MILID",
+    name:"DEMIMO",
     themeColor:"#0061d4",
     appleMobileWebAppCapable: true,
     appleMobileWebAppStatusBarStyle:'#0061d4',
@@ -28,7 +28,7 @@ module.exports = {
     },
     manifestOptions: {
       background_color: "#0061d4"
-    }    
+    }
 
   }
 }
