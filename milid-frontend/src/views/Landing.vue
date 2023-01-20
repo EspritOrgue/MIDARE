@@ -9,7 +9,7 @@
 
         <div class="toolbar-title">
           <MILIDIcons name="logo" width="80" color="white"/>
-        </div>        
+        </div>
 
         <div class="toolbar-section-end">
           <button class="icon end">
@@ -37,7 +37,7 @@
         <p v-html="i18n('landing_title2')" />
         <img  src="@/assets/MILID-logo-minimal.svg" />
 
-        <button class="btn tertiary"                 
+        <button class="btn tertiary"
                 @click="onInstall" v-show="!installed">{{i18n('landing_install')}}</button>
       </section>
       <section class="continue hide-md  hide-lg">
@@ -76,13 +76,13 @@
     padding-top: 80px;
     .toolbar{
       transform: translateY(0);
-      transition: all 200ms;      
+      transition: all 200ms;
       top:0px;
       background-color: var(--md-theme-default-primary);
       height: 69px;
       -box-shadow: 0 2px 3px -1px rgba(0,0,0,.1);
       &.exited {
-        transform: translateY(69px);            
+        transform: translateY(69px);
       }
 
       .toolbar-title{
@@ -93,32 +93,31 @@
         }
       }
     }
-    
+
     .version {
       opacity: .5;
       margin: 5px;
       padding: 2px;
       font-size: 13px;
-      color: white;      
+      color: white;
     }
 
     .main{
       border-radius: 55px;
       padding: 0 10px;
       margin: 0 13px;
-      min-height: calc( 100vh - 90px);    
+      min-height: calc( 100vh - 90px);
       height: 100%;
       color: white;
       background-color: var(--md-theme-default-secondary);
 
       >section.desktop {
         max-width: 80%;
-        padding: 10px 100px;        
+        padding: 10px 100px;
         overflow:visible;
         background-image: url('../assets/rocket-static.svg');
         background-repeat: no-repeat;
         background-position-x: 20%;
-        background-position-y: 60px;
         background-size: 16%;
         min-height: (80vh);
         p{
@@ -132,7 +131,7 @@
 
         }
         button {
-          margin-top: 40px;          
+          margin-top: 40px;
           padding: 30px!important;
         }
       }
@@ -143,7 +142,7 @@
         padding: 10px 30px;
         @media (max-width:330px) {
           padding: 10px 5px;
-          transform: scale(.9);          
+          transform: scale(.9);
         }
 
         p,h3{
@@ -164,10 +163,10 @@
 
         }
         @media (max-width: 376px) {
-          max-width: 100%;        
-        }      
+          max-width: 100%;
+        }
      }
-     
+
      section.continue {
       margin-top: 10px;
       @media (max-width:376px) {
@@ -176,16 +175,16 @@
        button{
         border: none;
         background: transparent;
-        width: 65px;     
+        width: 65px;
         height: 65px;
         svg{
           transform: rotate(180deg);
-        }    
+        }
        }
         p{
           text-align: center;
           margin: 5px;
-          font-size: 14px;          
+          font-size: 14px;
         }
 
      }
@@ -217,9 +216,9 @@
     width: calc( 100vw - 10px );
     text-align: center;
     border-radius: 20px 20px 0 0;
-    padding: 0 5px;    
+    padding: 0 5px;
     transform: translateY(calc(100vh - 90px));
-    transition: all 200ms;      
+    transition: all 200ms;
     box-shadow: 0 2px 20px 8px rgba(0, 0, 0, 0.3);
 
 
@@ -246,14 +245,14 @@
           padding: 10px 15px;
           border-radius: 15px;
           border: 3px solid white;
-          outline: 0;          
+          outline: 0;
           min-width: 240px;
         }
         a{
           display: block;
           .icon{
             font-size: 55px;
-            margin-top: 20px;            
+            margin-top: 20px;
           }
           h4{
             margin-top: 0;
@@ -268,7 +267,7 @@
 
 
 
-  }  
+  }
 
 
 
@@ -362,7 +361,7 @@ export default class Landing extends Vue {
     this.open = true;
   }
 
-  
+
   onInstall($event) {
     const deferredPrompt = this.deferredPrompt;
     // Show the prompt
@@ -387,8 +386,8 @@ export default class Landing extends Vue {
         console.log('User dismissed the A2HS prompt', choiceResult);
       }
       this.deferredPrompt = {};
-    }); 
-    
+    });
+
   }
 
 }
