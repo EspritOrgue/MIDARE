@@ -6,7 +6,7 @@
         <div class="surface">
           <div class="cancel material-icons" @click="onClose">close</div>
           <div class="label">
-            Installez MILID dans votre appareil.<br/>
+            Installez DEMIMO dans votre appareil.<br/>
             Appuyez sur l'icône de Partage, puis sélectionnez<br/>
             <b>Ajouter à l'écran d'accueil.</b>
           </div>
@@ -20,7 +20,7 @@
         <div class="surface">
           <div class="cancel material-icons" @click="onClose">close</div>
           <div class="label">
-            Pour ajouter MILID dans votre appareil.<br/>
+            Pour ajouter DEMIMO dans votre appareil.<br/>
             Il faut utiliser le navigateur <b>Safari</b><br/>
           </div>
         </div>
