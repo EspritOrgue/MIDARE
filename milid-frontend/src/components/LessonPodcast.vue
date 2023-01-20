@@ -14,7 +14,7 @@
       <div
         class="status "
         :class="{ play: isReadyToPlay }"
-        @click="onToggle">        
+        @click="onToggle">
       </div>
     </div>
 
@@ -77,7 +77,6 @@ h1 {
 .lottie-container {
   display: flex;
   justify-content: center;
-  width: 100vw;
   min-height: 320px;
   -margin-left: 15px;
   position: relative;
@@ -111,7 +110,6 @@ h1 {
 
 .lottie-player {
   position: relative;
-  left: -9%;
 }
 
 .duration-container {
