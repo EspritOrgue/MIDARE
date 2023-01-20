@@ -118,7 +118,6 @@
         background-image: url('../assets/rocket-static.svg');
         background-repeat: no-repeat;
         background-position-x: 20%;
-        background-size: 16%;
         min-height: (80vh);
         p{
           margin: 30px 0;
