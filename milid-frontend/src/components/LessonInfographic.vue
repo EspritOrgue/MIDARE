@@ -2,8 +2,8 @@
     <div class="col" :class="'theme-'+theme" :style="cssVars" >
         <h1 class="primary-on-text" v-html="title"/>
         <div ref="text_root" v-html="textContent" />
-        <div ref="raw_root" v-html="svgContent" />
-
+        <div id="infography" ref="raw_root" v-html="svgContent" />
+        <div id="loader" ref="loader"></div>
         <!-- DONE -->
         <CompletionButton :completed="completed" v-on:complete="onCompletionHandler" />
 
@@ -28,6 +28,60 @@
     cursor:pointer;
     text-decoration: underline;
   }
+#infography{
+    display:none;
+}
+#loader {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   max-width: 6rem;
+   margin: 10rem auto;
+
+ }
+ #loader:before,
+ #loader:after {
+   content: "";
+   position: absolute;
+   border-radius: 50%;
+   animation: pulsOut 1.8s ease-in-out infinite;
+   filter: drop-shadow(0 0 1rem var(--lesson-color));
+ }
+ #loader:before {
+   width: 100%;
+   padding-bottom: 100%;
+   box-shadow: inset 0 0 0 1rem var(--lesson-color);
+   animation-name: pulsIn;
+ }
+ #loader:after {
+   width: calc(100% - 2rem);
+   padding-bottom: calc(100% - 2rem);
+   box-shadow: 0 0 0 0 var(--lesson-color);
+ }
+ @keyframes pulsIn {
+   0% {
+     box-shadow: inset 0 0 0 1rem var(--lesson-color);
+     opacity: 1;
+   }
+   50%, 100% {
+     box-shadow: inset 0 0 0 0 var(--lesson-color);
+     opacity: 0;
+   }
+ }
+
+ @keyframes pulsOut {
+   0%, 50% {
+     box-shadow: 0 0 0 0 var(--lesson-color);
+     opacity: 0;
+   }
+   100% {
+     box-shadow: 0 0 0 1rem var(--lesson-color);
+     opacity: 1;
+   }
+ }
+
 </style>
 
 
@@ -69,6 +123,10 @@ export default class LessonInfographic extends Vue {
       window.addEventListener('iconload', (e) => {
           this.setup()
           this.setupDefinitions();
+          let loader = this.$refs.loader as HTMLElement;
+          let svgElement = this.$refs.raw_root as HTMLElement;
+          loader.remove()
+          svgElement.id=""
       });
   }
 
