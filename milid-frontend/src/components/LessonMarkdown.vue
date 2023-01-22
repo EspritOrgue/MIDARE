@@ -43,7 +43,7 @@
   .col /deep/ ._definition{
     color: var(--lesson-color);
     cursor:pointer;
-    text-decoration: underline;
+    text-decoration: underline dashed;
   }
 
   .col /deep/ h1{
@@ -107,7 +107,7 @@ export default class LessonMarkdown extends Vue {
 
 
   get module() {
-    return $module.getModuleWithId(this.moduleId);    
+    return $module.getModuleWithId(this.moduleId);
   }
 
   get lesson(){
@@ -122,7 +122,7 @@ export default class LessonMarkdown extends Vue {
       const metric = $metric.progressionState[this.lesson.id] || {};
       return metric.state || '';
   }
-  
+
   get hasQuiz(){
     return !!this.lesson.quiz;
   }
@@ -170,6 +170,6 @@ export default class LessonMarkdown extends Vue {
           state: MILID.LessonState.DONE
       };
       $metric.event(params);
-  }  
+  }
 }
 </script>
