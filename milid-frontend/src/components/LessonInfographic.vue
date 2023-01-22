@@ -123,10 +123,11 @@ export default class LessonInfographic extends Vue {
       window.addEventListener('iconload', (e) => {
           this.setup()
           this.setupDefinitions();
-          let loader = this.$refs.loader as HTMLElement;
-          let svgElement = this.$refs.raw_root as HTMLElement;
-          loader.remove()
-          svgElement.id=""
+          let svgElement = e.target as HTMLElement;
+          // @ts-ignore: Object is possibly 'null'.
+          svgElement.parentElement.id=""
+          // @ts-ignore: Object is possibly 'null'.
+          svgElement.parentElement.nextSibling.remove()
       });
   }
 
