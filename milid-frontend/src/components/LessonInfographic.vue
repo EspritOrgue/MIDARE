@@ -28,7 +28,6 @@
     cursor:pointer;
     text-decoration: underline;
   }
-
 </style>
 
 
@@ -67,17 +66,16 @@ export default class LessonInfographic extends Vue {
   }
 
   mounted(){
-    setTimeout(_=>{
-        this.setup();
-        this.setupDefinitions();
-        },100)
+      window.addEventListener('iconload', (e) => {
+          this.setup()
+          this.setupDefinitions();
+      });
   }
 
   beforeDestroy(){
     this.cleanup();
     this.cleanupDefinitions();
   }
-
   get module() {
     return $module.getModuleWithId(this.moduleId);
   }
