@@ -1,6 +1,6 @@
 {
-  "name": "demimo-frontend",
-  "version": "1.0.10-demimo",
+  "name": "midare-frontend",
+  "version": "0.9.99-midare",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
