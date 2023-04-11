@@ -7,7 +7,7 @@
     "MARKDOWN": "cours"
   },
   "themes": {
-    "1": { "primary":"#0061D4","secondary":"#FFFFFF", "tertiary":"#FFFFFF"},
+    "1": { "primary":"#1F99FF","secondary":"#FFFFFF", "tertiary":"#FFFFFF"},
     "2": { "primary":"#FFBC00","secondary":"#FF8D00", "tertiary":"#FFF9C5"},
     "3": { "primary":"#00D6B2","secondary":"#00A585", "tertiary":"#D9FFF8"},
     "4": { "primary":"#FF0049","secondary":"#A5003F", "tertiary":"#FF85A2"}
@@ -19,10 +19,10 @@
   "i18n":{
     "fr":{
       "app_pwa_update":"Une mise à jour est disponible",
-      "landind_desktop_h1":"DEMIMO, c’est une formation en microlearning, sur le microlearning. Découvrez à travers plusieurs activités sur votre téléphone, les enjeux de la création d’un cours dans ce nouveau format innovant ! Explorez les enjeux du microlearning et du Mobile learning, concevez vos objectifs d’apprentissage, créez vos scripts, scénarios pédagogiques et vos nuggets, et partagez votre application avec vos apprenants.",
+      "landind_desktop_h1":"MIDARE, c’est une formation en microlearning, sur le microlearning. Découvrez à travers plusieurs activités sur votre téléphone, les enjeux de la création d’un cours dans ce nouveau format innovant ! Explorez les enjeux du microlearning et du Mobile learning, concevez vos objectifs d’apprentissage, créez vos scripts, scénarios pédagogiques et vos nuggets, et partagez votre application avec vos apprenants.",
       "landind_desktop_h2":"",
       "landind_desktop_h3":"",
-      "landing_desktop_install": "Teste DEMIMO sur ton smartphone ! Accède et installe DEMIMO sur ton écran d'accueil",
+      "landing_desktop_install": "Teste MIDARE sur ton smartphone ! Accède et installe MIDARE sur ton écran d'accueil",
       "landing_title1":"Bienvenue!",
       "landing_title2":"Installer l'application dans votre mobile pour profiter pleinement de l'expérience micro-learning",
       "landing_install":"Ajouter à l'écran d'accueil",
@@ -31,10 +31,10 @@
     },
     "de":{
       "app_pwa_update":"An update is available",
-      "landind_desktop_h1":"DEMIMO, c’est une formation en microlearning, sur le microlearning. Découvrez à travers plusieurs activités sur votre téléphone, les enjeux de la création d’un cours dans ce nouveau format innovant ! Explorez les enjeux du microlearning et du Mobile learning, concevez vos objectifs d’apprentissage, créez vos scripts, scénarios pédagogiques et vos nuggets, et partagez votre application avec vos apprenants.",
+      "landind_desktop_h1":"MIDARE, c’est une formation en microlearning, sur le microlearning. Découvrez à travers plusieurs activités sur votre téléphone, les enjeux de la création d’un cours dans ce nouveau format innovant ! Explorez les enjeux du microlearning et du Mobile learning, concevez vos objectifs d’apprentissage, créez vos scripts, scénarios pédagogiques et vos nuggets, et partagez votre application avec vos apprenants.",
       "landind_desktop_h2":"",
       "landind_desktop_h3":"",
-      "landing_desktop_install": "Teste DEMIMO sur ton smartphone ! Accède et installe MILID sur ton écran d'accueil",
+      "landing_desktop_install": "Teste MIDARE sur ton smartphone ! Accède et installe MILID sur ton écran d'accueil",
       "landing_title1":"Bienvenue!",
       "landing_title2":"Installer l'application dans votre mobile pour profiter pleinement de l'expérience micro-learning",
       "landing_install":"Ajouter à l'écran d'accueil",

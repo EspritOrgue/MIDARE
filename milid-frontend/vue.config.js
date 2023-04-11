@@ -14,7 +14,7 @@ module.exports = {
     }
   },
   pwa:{
-    name:"DEMIMO",
+    name:"MIDARE",
     themeColor:"#0061d4",
     appleMobileWebAppCapable: true,
     appleMobileWebAppStatusBarStyle:'#0061d4',

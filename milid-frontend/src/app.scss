@@ -1,17 +1,29 @@
-/* * * * space grotesk * * * * */
-
 @font-face {
-  font-family: "space grotesk";
-  src: url("/fonts/space_grotesk/SpaceGrotesk-Regular.ttf");
+  font-family: "inter";
+  src: url("/fonts/inter.woff/Inter-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "space grotesk";
-  src: url("/fonts/space_grotesk/SpaceGrotesk-Bold.ttf");
+  font-family: "inter";
+  src: url("/fonts/inter.woff/Inter-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("/fonts/inter.woff/Inter-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("/fonts/inter.woff/Inter-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
 }
 strong{
   font-weight: bold;
