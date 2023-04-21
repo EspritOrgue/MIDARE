@@ -95,7 +95,7 @@
     }
 
     .version {
-      opacity: .5;
+      opacity: .75;
       margin: 5px;
       padding: 2px;
       font-size: 13px;
