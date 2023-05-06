@@ -109,7 +109,6 @@
   {
      filter: opacity(0.5);
   }
-
 </style>
 
 <script lang="ts">

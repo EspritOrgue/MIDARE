@@ -25,81 +25,175 @@
   font-weight: bold;
   font-style: italic;
 }
-strong{
+
+strong {
   font-weight: bold;
 }
 
-  html {
-    -webkit-overflow-scrolling: touch;
-    overflow: scrolls;
-  }
-  body{
-      margin: 0;
-      overflow-y: auto;
-  }
+html {
+  -webkit-overflow-scrolling: touch;
+  overflow: scrolls;
+}
 
-  button {
-    outline: 0;
-  }
+body {
+  margin: 0;
+  overflow-y: auto;
+}
 
-  .hide        {display: none!important;}
-  .show-sm     {display: none!important;}
+button {
+  outline: 0;
+}
 
-  @media only screen and (max-width: 767px) {
-    .hide-sm    {display: none!important;}
-    .show-sm     {display: block!important;}
-    .inline-show-sm     {display: inline-block!important;}
-  }
+.hide {
+  display: none !important;
+}
 
-  @media only screen and (min-width: 767px) {
-    .hide-md    {display: none;}
-  }
+.show-sm {
+  display: none !important;
+}
 
-
-  @media only screen and (min-width: 1024px) {
-    .show-lg    {display: block;}
-    .hide-lg    {display: none;}
+@media only screen and (max-width: 767px) {
+  .hide-sm {
+    display: none !important;
   }
 
-  .theme-1 {
-    .primary-on-text { color: var(--theme-1-primary)!important;}
-    .secondary-on-text { color: var(--theme-1-secondary)!important;}
-    .tertiary-on-text { color: var(--theme-1-tertiary)!important; }
-
-    .primary { background-color: var(--theme-1-primary)!important; color: white!important }
-    .secondary { background-color: var(--theme-1-secondary)!important; color: white!important; }
-    .tertiary { background-color: var(--theme-1-tertiary)!important; }
+  .show-sm {
+    display: block !important;
   }
 
-  .theme-2 {
-    .primary { background-color: var(--theme-2-primary)!important;color: white!important; }
-    .secondary { background-color: var(--theme-2-secondary)!important;color: white!important; }
-    .tertiary { background-color: var(--theme-2-tertiary)!important; }
+  .inline-show-sm {
+    display: inline-block !important;
+  }
+}
 
-    .primary-on-text { color: var(--theme-2-primary)!important;}
-    .secondary-on-text { color: var(--theme-2-secondary)!important;}
-    .tertiary-on-text { color: var(--theme-2-tertiary)!important; }
+@media only screen and (min-width: 767px) {
+  .hide-md {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .show-lg {
+    display: block;
   }
 
-  .theme-3 {
-    .primary { background-color: var(--theme-3-primary)!important;color: white!important; }
-    .secondary { background-color: var(--theme-3-secondary)!important;color: white!important; }
-    .tertiary { background-color: var(--theme-3-tertiary)!important; }
+  .hide-lg {
+    display: none;
+  }
+}
 
-    .primary-on-text { color: var(--theme-3-primary)!important;}
-    .secondary-on-text { color: var(--theme-3-secondary)!important;}
-    .tertiary-on-text { color: var(--theme-3-tertiary)!important; }
+.theme-1 {
+  .primary-on-text {
+    color: var(--theme-1-primary) !important;
   }
 
-  .theme-4 {
-    .primary { background-color: var(--theme-4-primary)!important;color: white!important; }
-    .secondary { background-color: var(--theme-4-secondary)!important;color: white!important; }
-    .tertiary { background-color: var(--theme-4-tertiary)!important; }
-
-    .primary-on-text { color: var(--theme-4-primary)!important;}
-    .secondary-on-text { color: var(--theme-4-secondary)!important;}
-    .tertiary-on-text { color: var(--theme-4-tertiary)!important; }
+  .secondary-on-text {
+    color: var(--theme-1-secondary) !important;
   }
+
+  .tertiary-on-text {
+    color: var(--theme-1-tertiary) !important;
+  }
+
+  .primary {
+    background-color: var(--theme-1-primary) !important;
+    color: white !important
+  }
+
+  .secondary {
+    background-color: var(--theme-1-secondary) !important;
+    color: white !important;
+  }
+
+  .tertiary {
+    background-color: var(--theme-1-tertiary) !important;
+  }
+}
+
+.theme-2 {
+  .primary {
+    background-color: var(--theme-2-primary) !important;
+    color: white !important;
+  }
+
+  .secondary {
+    background-color: var(--theme-2-secondary) !important;
+    color: white !important;
+  }
+
+  .tertiary {
+    background-color: var(--theme-2-tertiary) !important;
+  }
+
+  .primary-on-text {
+    color: var(--theme-2-primary) !important;
+  }
+
+  .secondary-on-text {
+    color: var(--theme-2-secondary) !important;
+  }
+
+  .tertiary-on-text {
+    color: var(--theme-2-tertiary) !important;
+  }
+}
+
+.theme-3 {
+  .primary {
+    background-color: var(--theme-3-primary) !important;
+    color: white !important;
+  }
+
+  .secondary {
+    background-color: var(--theme-3-secondary) !important;
+    color: white !important;
+  }
+
+  .tertiary {
+    background-color: var(--theme-3-tertiary) !important;
+  }
+
+  .primary-on-text {
+    color: var(--theme-3-primary) !important;
+  }
+
+  .secondary-on-text {
+    color: var(--theme-3-secondary) !important;
+  }
+
+  .tertiary-on-text {
+    color: var(--theme-3-tertiary) !important;
+  }
+}
+
+.theme-4 {
+  .primary {
+    background-color: var(--theme-4-primary) !important;
+    color: white !important;
+  }
+
+  .secondary {
+    background-color: var(--theme-4-secondary) !important;
+    color: white !important;
+  }
+
+  .tertiary {
+    background-color: var(--theme-4-tertiary) !important;
+  }
+
+  .primary-on-text {
+    color: var(--theme-4-primary) !important;
+  }
+
+  .secondary-on-text {
+    color: var(--theme-4-secondary) !important;
+  }
+
+  .tertiary-on-text {
+    color: var(--theme-4-tertiary) !important;
+  }
+}
 
 .hidden {
   visibility: hidden;
@@ -114,16 +208,16 @@ strong{
 }
 
 
-.infographic-overlay{
-  opacity:0;
+.infographic-overlay {
+  opacity: 0;
   transition: opacity 0.4s linear;
   -moz-transition: opacity 0.4s linear;
   -webkit-transition: opacity 0.4s linear;
   pointer-events: none;
 }
 
-.infographic-overlay-visible{
-  opacity:1;
+.infographic-overlay-visible {
+  opacity: 1;
   pointer-events: auto;
 }
 
@@ -135,9 +229,9 @@ strong{
   z-index: 2;
   position: fixed;
   width: 100vw;
+
   .toolbar-section-start,
-  .toolbar-section-end
-  {
+  .toolbar-section-end {
     display: flex;
     align-items: center;
     flex: 1;
@@ -153,7 +247,7 @@ strong{
     order: 0;
   }
 
-  .toolbar-title{
+  .toolbar-title {
     text-align: center;
     font-size: 14px;
     font-weight: 500;
@@ -166,26 +260,31 @@ strong{
     overflow: hidden;
     width: 100%;
     height: 100%;
+
     &.tight {
       margin: 0;
     }
-    &.title-left{
+
+    &.title-left {
       text-align: left;
     }
-    .progress{
+
+    .progress {
       width: 90px;
       height: 25px;
       margin: auto;
     }
+
     // special case, extra large for module 2 which has 9 lessons
-    .progress-module-2{
+    .progress-module-2 {
       width: 180px;
       height: 25px;
       margin: auto;
     }
-    svg{
-        height: 70%;
-        margin-top: 13px;
+
+    svg {
+      height: 70%;
+      margin-top: 13px;
     }
   }
 
@@ -198,13 +297,14 @@ strong{
     justify-content: center;
   }
 
-  button{
+  button {
     padding: 2px 2px;
     width: 36px;
     height: 36px;
     background-color: transparent;
     border: none;
-    svg{
+
+    svg {
       width: 34px;
     }
   }
@@ -218,13 +318,13 @@ button.done {
   padding: 10px 20px;
   margin: 10px auto;
   border-radius: 20px;
-  margin-left: calc( 100vw / 2 - 100px );
+  margin-left: calc(100vw / 2 - 100px);
   margin-top: 40px;
   width: 150px;
   outline: 0;
 }
 
-.img-fullwidth{
+.img-fullwidth {
   width: 100vw;
   margin-left: -25px;
   margin-right: -25px;
@@ -240,6 +340,7 @@ button.done {
   width: 10em;
   height: 10em;
 }
+
 .loader {
   margin: 60px auto;
   font-size: 10px;
@@ -248,28 +349,32 @@ button.done {
   border-top: 1.1em solid rgba(122, 122, 122, 0.2);
   border-right: 1.1em solid rgba(122, 122, 122, 0.2);
   border-bottom: 1.1em solid rgba(122, 122, 122, 0.2);
-  border-left: 1.1em solid var(--theme-1-primary,#6911ff);
+  border-left: 1.1em solid var(--theme-1-primary, #6911ff);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-animation: load8 1.1s infinite linear;
   animation: load8 1.1s infinite linear;
 }
+
 @-webkit-keyframes load8 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 @keyframes load8 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -280,16 +385,17 @@ button.done {
 // Info
 // https://css-tricks.com/practical-css-scroll-snapping/
 
-h1{
+h1 {
   font-size: 16px;
   text-transform: uppercase;
 }
 
 
-.overlay-pane{
-  &.overlay-open{
+.overlay-pane {
+  &.overlay-open {
     display: block;
   }
+
   display: none;
 
   .install-ios {
@@ -313,7 +419,7 @@ h1{
       pointer-events: auto;
       transition: opacity 150ms 0ms cubic-bezier(0, 0, 0.2, 1), transform 150ms 0ms cubic-bezier(0, 0, 0.2, 1);
       box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-      background-color:#333;
+      background-color: #333;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
@@ -323,7 +429,8 @@ h1{
       min-width: 100%;
       min-height: 113px;
       padding-top: 10px;
-      .material-icons{
+
+      .material-icons {
         padding-bottom: 10px;
         font-size: 24px;
         line-height: 1;
@@ -331,14 +438,14 @@ h1{
         display: block;
         color: white;
 
-        &.update{
+        &.update {
           margin-top: 10px;
           border: 1px solid #aaa;
           border-radius: 8px;
           padding: 4px;
         }
 
-        &.cancel{
+        &.cancel {
           left: auto;
           right: 10px;
           top: 10px;
@@ -352,7 +459,7 @@ h1{
         }
       }
 
-      .label{
+      .label {
         text-align: center;
         margin: 0;
         margin-left: auto;
@@ -368,4 +475,8 @@ h1{
       }
     }
   }
+}
+
+#quiz {
+  color: var(--lesson-color);
 }
