@@ -26,13 +26,13 @@
     <div class="about-content">
 
       <h1>À propos</h1>
-      <p>MIDARE acronyme de « Microlearning Information Droits d’Auteur Ressources Education » a vu le jour à la suite d’une commande de la part de la direction de la HEG-Genève auprès de sa filière Information Science (IS). Celle-ci a formulée la demande de la création d’un dispositif de formation en microlearning ayant pour finalité d’accompagner les membres du PER de la HEG-Genève sur le droit d’auteur et son utilisation. En effet, suite au développement d’une politique open science et open education des hautes écoles suisses, savoir utiliser les licences creative commons est nécessaire afin de favoriser ces mouvements.</p>
+      <p>MIDARE acronyme de « Microlearning Information Droits d'Auteur Ressources Education » a vu le jour à la suite d'une commande de la part de la direction de la HEG-Genève auprès de sa filière Information Science (IS). Celle-ci a formulée la demande de la création d'un dispositif de formation en microlearning ayant pour finalité d'accompagner les membres du PER de la HEG-Genève sur le droit d'auteur et son utilisation. En effet, suite au développement d'une politique open science et open education des hautes écoles suisses, savoir utiliser les licences creative commons est nécessaire afin de favoriser ces mouvements.</p>
 
-      <p>La HEG-Genève (Haute Ecole de Gestion de Genève) regroupe quatre filières d’études reliées au domaine de l’économie et des services : économie d’entreprise, informatique de gestion, information science (anciennement information documentaire) et international business management.</p>
+      <p>La HEG-Genève (Haute Ecole de Gestion de Genève) regroupe quatre filières d'études reliées au domaine de l'économie et des services : économie d'entreprise, informatique de gestion, information science (anciennement information documentaire) et international business management.</p>
 
-      <p>Le projet a été réalisé sous la supervision de René Schneider (Professeur et Responsable de la filière IS). Le contenu a été créé par Joseph Baud-Grasset (Assistant HES) et Eloïse Morisod (Assistante HES). Le design et les médias ont été créés par Joseph Baud-Grasset, Eloïse Morisod et Vincent de Vevey (Information & Learning Designer). Amir Alwash (Développeur Web/ DevOps) a adapté la partie informatique. Pierre Guanzini (Assistant HES) a assisté et prêté sa voix pour l’enregistrement audio. Tous sont membres de la HEG-Genève.</p>
+      <p>Le projet a été réalisé sous la supervision de René Schneider (Professeur et Responsable de la filière IS). Le contenu a été créé par Joseph Baud-Grasset (Assistant HES) et Eloïse Morisod (Assistante HES). Le design et les médias ont été créés par Joseph Baud-Grasset, Eloïse Morisod et Vincent de Vevey (Information & Learning Designer). Amir Alwash (Développeur Web/ DevOps) a adapté la partie informatique. Pierre Guanzini (Assistant HES) a assisté et prêté sa voix pour l'enregistrement audio. Tous sont membres de la HEG-Genève.</p>
 
-      <p>Nous vous souhaitons une agréable expérience d’apprentissage !</p>
+      <p>Nous vous souhaitons une agréable expérience d'apprentissage !</p>
     </div>
   </div>
 </template>
