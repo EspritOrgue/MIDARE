@@ -29,6 +29,7 @@
 
     <!-- DONE -->
     <div class="col">
+      <Quiz v-if="hasQuiz" :moduleId="moduleId" :lessonId="lessonId" />
       <CompletionButton :completed="completed" v-on:complete="onCompletionHandler" />
     </div>
   </div>
@@ -148,8 +149,6 @@
       justify-content: space-between;
       cursor:pointer;
   }
-
-
 </style>
 
 
@@ -159,13 +158,14 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 import MILIDIcons from '../components/MILIDIcons.vue';
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
 import CompletionButton from './CompletionButton.vue'
-
+import Quiz from './Quiz.vue';
 import { $config, $module, $metric } from '@/services';
 import { MILID } from '../models';
 import { formatTime } from '../helpers/milidHelpers';
 
 @Component({
   components: {
+    Quiz,
     MILIDIcons,
     LottieAnimation,
     CompletionButton,
@@ -235,6 +235,10 @@ export default class LessonVideo extends Vue {
 
   get video(){
       return this.$refs.video as HTMLVideoElement;
+  }
+
+  get hasQuiz() {
+    return !!this.lesson.quiz;
   }
 
   mounted(){

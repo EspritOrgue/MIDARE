@@ -52,7 +52,8 @@
         />
       </div>
     </div>
-
+    <Quiz v-if="hasQuiz" :moduleId="moduleId" :lessonId="lessonId" />
+    
     <!-- DONE -->
     <CompletionButton
       :completed="completed"
@@ -144,13 +145,14 @@ import { Component, Vue, Prop } from "vue-property-decorator";
 import MILIDIcons from "./MILIDIcons.vue";
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
 import CompletionButton from "./CompletionButton.vue";
-
+import Quiz from './Quiz.vue';
 import { $config, $module, $metric } from "@/services";
 import { MILID } from "../models";
 import { formatTime } from "../helpers/milidHelpers";
 
 @Component({
   components: {
+    Quiz,
     MILIDIcons,
     LottieAnimation,
     CompletionButton,
@@ -177,6 +179,10 @@ export default class LessonPodcast extends Vue {
 
   get theme() {
     return $module.getModuleWithId(this.moduleId).theme;
+  }
+
+  get hasQuiz() {
+    return !!this.lesson.quiz;
   }
 
   get lottiePath() {
