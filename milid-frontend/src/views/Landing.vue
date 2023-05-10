@@ -27,7 +27,7 @@
       <section class="desktop hide-sm">
         <img src="@/assets/MILID-logo-minimal.svg" />
         <p class="right" v-html="i18n('landind_desktop_h1')" />
-        <p class="left" v-html="i18n('landind_desktop_h2')" />
+        <p class="right" v-html="i18n('landind_desktop_h2')" />
         <p class="right" v-html="i18n('landind_desktop_h3')" />
         <button class="btn tertiary" @click="onInstall" v-show="!installed">{{i18n('landing_desktop_install')}}</button>
       </section>
@@ -118,6 +118,8 @@
         background-image: url('../assets/rocket-static.svg');
         background-repeat: no-repeat;
         background-position-x: 20%;
+        background-size: auto 90%;
+        background-position-y: 2rem;
         min-height: (80vh);
         p{
           margin: 30px 0;
