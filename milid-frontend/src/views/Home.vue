@@ -32,8 +32,11 @@
     </div>
 
     <!-- STATUS -->
-    <ModuleStatus v-for="mod in modules" :key="mod.id+'status'"
-                  :module="mod" @click.native="onIndex($event,mod.id)"></ModuleStatus>
+    <div  v-if="!isUniqueModule">
+      <ModuleStatus v-for="mod in modules" :key="mod.id + 'status'"
+                    :module="mod" @click.native="onIndex($event, mod.id)"></ModuleStatus>
+    </div>
+    
     
     <!-- MODULE -->
     <div v-for="mod in modules" :key="mod.id" class="module " :id="'m'+mod.id">
@@ -95,6 +98,10 @@ export default class Home extends Vue {
 
   get modules() {
     return $module.modules;    
+  }
+
+  get isUniqueModule() {
+    return $module.getModuleCount() == 1
   }
 
   get config(){
