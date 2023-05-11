@@ -33,6 +33,10 @@
       <p>Le projet a été réalisé sous la supervision de René Schneider (Professeur et Responsable de la filière IS). Le contenu a été créé par Joseph Baud-Grasset (Assistant HES) et Eloïse Morisod (Assistante HES). Le design et les médias ont été créés par Joseph Baud-Grasset, Eloïse Morisod et Vincent de Vevey (Information & Learning Designer). Amir Alwash (Développeur Web/ DevOps) a adapté la partie informatique. Pierre Guanzini (Assistant HES) a assisté et prêté sa voix pour l'enregistrement audio. Tous sont membres de la HEG-Genève.</p>
 
       <p>Nous vous souhaitons une agréable expérience d'apprentissage !</p>
+
+      <div style="text-align:center;">
+        <img style="width:60vw;" src="@/assets/cc-by.svg" alt=""/>
+      </div>
     </div>
   </div>
 </template>

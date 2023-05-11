@@ -214,7 +214,7 @@
   <!-- LOGO -->
   <svg id="Calque_2" v-else-if="name === 'logo'" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276 84">
     <g id="Calque_1-2" data-name="Calque 1">
-      <text style="fill: #ffffff;font-family: BerlinSansFBDemi-Bold, 'Berlin Sans FB Demi';font-size: 36px;font-weight: 700;letter-spacing: .1em;" transform="translate(61.94 54.69)"><tspan x="0" y="0">MIDARE </tspan></text>
+      <text style="fill: #ffffff;font-family: 'BerlinSansFBDemi-Bold', 'Berlin Sans FB Demi';font-size: 36px;font-weight: 700;letter-spacing: .1em;" transform="translate(61.94 54.69)"><tspan x="0" y="0">MIDARE </tspan></text>
     </g>
   </svg>
 </template>
