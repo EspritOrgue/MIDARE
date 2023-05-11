@@ -31,6 +31,10 @@ class ModuleService {
     return this._store.modules.find(m => m.id === id.toString());
   }
 
+  getModuleCount() {
+    return this._store.modules.length;
+  }
+
   getLessonsForModuleWithId(id){
     const module = this.getModuleWithId(id);
     if(!module) return [];

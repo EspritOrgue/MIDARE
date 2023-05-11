@@ -9,10 +9,14 @@
           </button>
         </div>
 
-        <div class="toolbar-title title-left">
-          <b>M{{module.id}}</b>.{{position}}<br/>
+        <div v-if="isUniqueModule" class="toolbar-title title-left">
+          <b>Leçon {{position}}</b><br/>
           <span v-html="currentLesson.title"></span>
-        </div>        
+        </div> 
+         <div v-else class="toolbar-title title-left">
+            <b>M{{ module.id }}</b>.{{ position }}<br/>
+            <span v-html="currentLesson.title"></span>
+          </div>       
 
         <div class="toolbar-section-end">
           <button class="end icon">
@@ -200,6 +204,10 @@ export default class Lesson extends Vue {
 
   get module() {
     return $module.getModuleWithId(this.$route.params.module_id);    
+  }
+
+  get isUniqueModule(){
+    return $module.getModuleCount() == 1
   }
 
   get lessons() {
