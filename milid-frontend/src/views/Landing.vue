@@ -42,7 +42,7 @@
       </section>
       <section class="continue hide-md  hide-lg">
         <button class="" @click="onOpen">
-          <MILIDIcons name="back" color="white"  class="back"/>
+          <MILIDIcons name="continue" color="white"  class="back"/>
         </button>
         <p v-html="i18n('landing_continue_title')"></p>
       </section>
