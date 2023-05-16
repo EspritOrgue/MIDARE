@@ -35,7 +35,7 @@
       <p>Nous vous souhaitons une agréable expérience d'apprentissage !</p>
 
       <div style="text-align:center;">
-        <img style="width:60vw;" src="@/assets/cc-by.svg" alt=""/>
+        <img style="width:50vw;" src="@/assets/cc-by.svg" alt=""/>
       </div>
     </div>
   </div>
