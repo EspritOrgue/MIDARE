@@ -12,15 +12,15 @@
     "3": { "primary":"#00D6B2","secondary":"#00A585", "tertiary":"#D9FFF8"},
     "4": { "primary":"#FF0049","secondary":"#A5003F", "tertiary":"#FF85A2"}
   },
-  "airtable": {
+  "airtable": { 
     "key" : "--",
     "base" : "appdgQusWVGxQVipj"
   },
   "i18n":{
     "fr":{
       "app_pwa_update":"Une mise à jour est disponible",
-      "landind_desktop_h1":"MIDARE est une formation en microlearning sur les droits d’auteur. Découvrez à travers plusieurs activités sur votre téléphone, comment citer vos droits d’auteur par l’utilisation des licences creative commons.",
-      "landind_desktop_h2":"Explorer les enjeux des droits d’auteur, (re)découvrez l’open education resources et enfin apprenez à maitriser les licences creative commons et leur changement.",
+      "landind_desktop_h1":"MIDARE est une formation en microlearning sur les droits d’auteur. Découvrez à travers plusieurs activités sur votre téléphone, comment citer vos droits d’auteur par l’utilisation des licences Creative Commons.",
+      "landind_desktop_h2":"Explorer les enjeux des droits d’auteur, (re)découvrez l’Open Educational Resources et enfin apprenez à maitriser les licences Creative Commons et leur changement.",
       "landind_desktop_h3":"Vous serez alors implacable sur la citation de vos droits d’auteur au sein de votre activité professionnelle !",
       "landing_desktop_install": "Le programme vous plaît ? Alors n’hésitez pas à installer MIDARE sur votre écran d’accueil de votre smartphone !",
       "landing_title1":"Bienvenue!",
@@ -31,8 +31,8 @@
     },
     "de":{
       "app_pwa_update":"An update is available",
-      "landind_desktop_h1":"MIDARE est une formation en microlearning sur les droits d’auteur. Découvrez à travers plusieurs activités sur votre téléphone, comment citer vos droits d’auteur par l’utilisation des licences creative commons.",
-      "landind_desktop_h2":"Explorer les enjeux des droits d’auteur, (re)découvrez l’open education resources et enfin apprenez à maitriser les licences creative commons et leur changement.",
+      "landind_desktop_h1":"MIDARE est une formation en microlearning sur les droits d’auteur. Découvrez à travers plusieurs activités sur votre téléphone, comment citer vos droits d’auteur par l’utilisation des licences Creative Commons.",
+      "landind_desktop_h2":"Explorer les enjeux des droits d’auteur, (re)découvrez l’Open Educational Resources et enfin apprenez à maitriser les licences Creative Commons et leur changement.",
       "landind_desktop_h3":"Vous serez alors implacable sur la citation de vos droits d’auteur au sein de votre activité professionnelle !",
       "landing_desktop_install": "Le programme vous plaît ? Alors n’hésitez pas à installer MIDARE sur votre écran d’accueil de votre smartphone !",
       "landing_title1":"Bienvenue!",
